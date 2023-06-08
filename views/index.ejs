@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Portfolio Website</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <nav class="navv">
+            <div>
+                <h1 id="logo">dxdelvin</h1>
+            </div>
+            <div>
+                
+
+                <button class="open"><i class="fas fa-bars"></i></button>
+                <div class="nav-items nav-black">
+                </div>
+                <div class="nav-items nav-red">
+                </div>
+                <div class="nav-items nav-white">
+                    <button class="close"><i class="fas fa-times"></i></button>
+                    <ul class="flex-col">
+                        <li class="links"><a href="#about">About</a></li>
+                        <li class="links"><a href="#work">Work</a></li>
+                        <li class="links"><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section class="container" id="main">
+        <div class="home-container flex-center">
+            <div>
+                <div class="icons">
+                    <a href=""><i class="fa-brands fa-instagram""></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href=""><i class="fa-brands fa-youtube"></i></a>
+                </div>
+                <div class="introduction">
+                    <h2>Delvin Dsouza</h2>
+                    <h3><span id="element"></span></h3>
+                    <p>I am 19year Kid who is writing this something which is going to be changed later, btw my typing speed is damn good</p>
+                    <a href="" class="btn-home">Contact Us</a>
+                </div>
+            </div>
+            <div class="intro-image">
+                <img class="home-img" src="/images/Homepage dx.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="container">
+        <h2 class="title">About Me</h2>
+        <div class="flex-center">
+            <div class="mini-container" data-aos="fade-right" data-aos-offset="20" data-aos-duration="1500">
+                <p>Mass Media Student :D Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed rem animi ab reiciendis, explicabo eaque deserunt labore nesciunt provident quis?</p>
+            </div>
+            <div class="mini-container" data-aos="zoom-in" data-aos-offset="20" data-aos-duration="1500">
+                <p>idk what to write Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed rem animi ab reiciendis, explicabo eaque deserunt labore nesciunt provident quis?</p>
+            </div>
+            <div class="mini-container" data-aos="fade-left" data-aos-offset="20" data-aos-duration="1500">
+                <p>My Resume :D Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed rem animi ab reiciendis, explicabo eaque deserunt labore nesciunt provident quis?</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="work" class="container">
+        <h2 class="title">My Work</h2>
+        <div id="imageGallery">
+            <%- images %>
+        </div>
+    </section>
+
+    <section id="contact" class="container">
+        <h2 class="title">Contact Me</h2>
+    </section>
+
+    <footer id="footer" class="container">
+        <p style="text-align: center;">Made by Delvin Dsouza with 💖</p>
+    </footer>
+
+
+
+
+
+
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="/script.js"></script>       
+</body>
+</html>
