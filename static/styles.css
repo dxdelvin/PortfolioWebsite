@@ -202,19 +202,25 @@ nav ul {
 
 
 #imageGallery {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 10px;
+  align-items: center;
 }
 
 #imageGallery img {
-  width: 19%;
-  height: auto;
+  width: 100%;
+  /* height: auto; */
   margin-bottom: 20px;
-  object-fit: cover;
+  /* object-fit: cover; */
   border-radius: 4px;
-  aspect-ratio: 1/1; /* Set the aspect ratio for a square (e.g., 1:1) */
+  /* aspect-ratio: 1/1; Set the aspect ratio for a square (e.g., 1:1) */
+  transition: transform ease .5s;
+}
 
+#imageGallery img:hover{
+  transform: scale(2);
 }
 
 /* #imageGallery img:hover{
